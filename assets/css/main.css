@@ -153,7 +153,7 @@ a:after {
 
 /* Header Wrap */
 #headerwrap {
-	background: url(../img/nick.JPG) no-repeat center top;
+	background: url(../img/nick.JPG) no-repeat center top height:600px width:1300px;
 	margin-top: 60px;
 	padding-top:140px;
 	text-align:center;
