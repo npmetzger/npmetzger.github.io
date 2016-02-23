@@ -23,6 +23,8 @@
     <script src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/smoothscroll.js"></script> 
     <script src="assets/js/Chart.js"></script>
+    <script src="typed.js"></script>
+
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -58,7 +60,16 @@
 		<div class="container">
 			<div class="row centered">
 				<div class="col-lg-12">
-					<h1>Nicholas P. Metzger</h1>
+					<h1>
+					<script>
+  						$(function(){
+      						$(".element").typed({
+        						strings: ["Software Engineering", "UT Austin", "Nicholas P. Metzger"],
+        						typeSpeed: 0
+      						});
+ 					 	});
+					</script>
+					</h1>
 					<h3>Software Engineering | npmetzger@utexas.edu</h3>
 				</div><!--/.col-lg-12 -->
 			</div><!--/.row -->
