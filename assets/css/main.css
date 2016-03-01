@@ -18,6 +18,7 @@ body {
 }
 /* new stuff */
 #particles-js{
+	background: #111;
 	width:100%;
 	background-position:50% 50%;
 	position:absolute;
