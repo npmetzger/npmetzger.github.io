@@ -3,17 +3,17 @@
 /* ----------------------------------------------- */
 
 /* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
-
-particlesJS.load('particles-js', 'assets/particles.json', function() {
+/*
+particlesJS.load('particles-js', 'particles.json', function() {
   console.log('particles.js loaded - callback');
 });
-
+*/
 
 /* Otherwise just put the config content (json): */
 
-/*particlesJS('particles-js',
+particlesJS('particles-js',
   
-  {
+    {
     "particles": {
       "number": {
         "value": 80,
@@ -51,29 +51,30 @@ particlesJS.load('particles-js', 'assets/particles.json', function() {
         }
       },
       "size": {
-        "value": 5,
+        "value": 10,
         "random": true,
         "anim": {
           "enable": false,
-          "speed": 40,
+          "speed": 80,
           "size_min": 0.1,
           "sync": false
         }
       },
       "line_linked": {
         "enable": true,
-        "distance": 150,
+        "distance": 300,
         "color": "#ffffff",
         "opacity": 0.4,
-        "width": 1
+        "width": 2
       },
       "move": {
         "enable": true,
-        "speed": 6,
+        "speed": 12,
         "direction": "none",
         "random": false,
         "straight": false,
         "out_mode": "out",
+        "bounce": false,
         "attract": {
           "enable": false,
           "rotateX": 600,
@@ -85,7 +86,7 @@ particlesJS.load('particles-js', 'assets/particles.json', function() {
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": true,
+          "enable": false,
           "mode": "repulse"
         },
         "onclick": {
@@ -96,20 +97,21 @@ particlesJS.load('particles-js', 'assets/particles.json', function() {
       },
       "modes": {
         "grab": {
-          "distance": 400,
+          "distance": 800,
           "line_linked": {
             "opacity": 1
           }
         },
         "bubble": {
-          "distance": 400,
-          "size": 40,
+          "distance": 800,
+          "size": 80,
           "duration": 2,
-          "opacity": 8,
+          "opacity": 0.8,
           "speed": 3
         },
         "repulse": {
-          "distance": 200
+          "distance": 400,
+          "duration": 0.4
         },
         "push": {
           "particles_nb": 4
@@ -119,15 +121,7 @@ particlesJS.load('particles-js', 'assets/particles.json', function() {
         }
       }
     },
-    "retina_detect": true,
-    "config_demo": {
-      "hide_card": false,
-      "background_color": "#b61924",
-      "background_image": "",
-      "background_position": "50% 50%",
-      "background_repeat": "no-repeat",
-      "background_size": "cover"
-    }
+    "retina_detect": true
   }
 
 );
