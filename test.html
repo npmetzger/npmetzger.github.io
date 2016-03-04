@@ -4,12 +4,25 @@
 		<link rel="stylesheet" media="screen" href="assets/css/style.css">
 
 		<title>Nick Metzger</title>
+		<script src="assets/js/typed.js"></script>
+	    <script>
+			$(function(){
+				$(".element").typed({
+				strings: ["coding", "gaming", "sleeping", "running", "playing", "creating", "innovating"],
+				typeSpeed: 0,
+				loop: true
+				});
+		 	});
+		</script>
 
 	</head>
 	<body>
 
-	<!-- particles.js container -->
+		<header>
+		<h1>Hi, I'm Nick,<br>and I like <span class="element"></span></h1>
+		<!-- particles.js container -->
 		<div id="particles-js"></div>
+		</header>
 
 
 		<script src="assets/js/particles.js"></script>
